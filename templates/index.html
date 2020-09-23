@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extract Entities</title>
+</head>
+<body>
+<h1 align="center">This is WebApp for extracting entities from text</h1>
+<form action="/extract_entities" method="post">
+    <p align="center">Enter Text here:</p>
+    <p align="center"><textarea id="text" name="text" rows="5" cols="100">
+    </textarea></p>
+    <p align="center"><input type="submit" value="Extract Entities"></p>
+</form>
+<center>
+<div style="width:70%" align="center">
+<p align="center">Original Sentence:</p>
+<p align="center">
+    {{data}}
+</p>
+<p align="center">Extracted Entities:</p>
+<p align="center">
+    {{response}}
+</p>
+</div></center>
+</body>
+</html>
