@@ -1,8 +1,13 @@
-import spacy
+# previous method
+'''import spacy
 
 # load spacy model
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_sm')'''
 
+#new method
+import spacy
+import en_core_web_md
+nlp = en_core_web_md.load()
 
 # function to extract entities
 def extract_entities(text):
